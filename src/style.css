@@ -1,1 +1,9 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body{
+    background-color: rgb(33, 95, 119);
+}
+h1{
+    margin: 20px;
+    padding: 10px;
+    font-size: 25px;
+    color: #ffffff;
+}
