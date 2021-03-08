@@ -1,27 +1,17 @@
-let pronoun = ["the", "our"];
-let adj = ["great", "big"];
-let noun = ["jogger", "racoon"];
-let dotExt = [".com", ".net", ".us", ".io"];
+let ranPron = ["the", "our"];
+let ranAdj = ["great", "big"];
+let ranNoun = ["jogger", "racoon"];
+let ranDomain = [".net", ".com"];
 
-window.onload = () => {
-  let cuatroRandom = [];
-  let posicionesElegibles = [];
-  let i, r;
-  for (i = 0; i < pronoun.length; i++) posicionesElegibles[i] = i;
-  for (i = 0; i < 4; i++) {
-    r = Math.floor(Math.random() * posicionesElegibles.length);
-    cuatroRandom.push(pronoun[posicionesElegibles[r]]);
-    posicionesElegibles.splice(r, 1);
+const ranDomainGen = () => {
+  for (let x = 0; x < ranPron.length; x++) {
+    for (let y = 0; y < ranAdj.length; y++) {
+      for (let z = 0; z < ranNoun.length; z++) {
+        for (let a = 0; a < ranDomain.length; a++) {
+          console.log(ranPron[x] + ranAdj[y] + ranNoun[z] + ranDomain[a]);
+        }
+      }
+    }
   }
-  console.log(cuatroRandom.toString());
 };
-/*let pronRandom = Math.floor(Math.random() * pronoun.length);
-  let adjRandom = Math.floor(Math.random() * adj.length);
-  let nounRandom = Math.floor(Math.random() * noun.length);
-  let dotExtRandom = Math.floor(this.Math.random() * dotExt.length);
-
-  let ranDomain = [pronRandom + adjRandom + nounRandom + dotExtRandom];
-
-  ranDomain = document.getElementById("ranDomainGen");
-  ranDomain.innerHTML = pronRandom + adjRandom + nounRandom + dotExtRandom;
-  */
+console.log(ranDomainGen());

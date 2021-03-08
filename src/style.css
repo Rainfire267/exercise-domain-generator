@@ -1,9 +1,7 @@
-body{
-    background-color: rgb(33, 95, 119);
-}
-h1{
-    margin: 20px;
-    padding: 10px;
-    font-size: 25px;
-    color: #ffffff;
+#container{
+    background:  blue;
+    margin: auto;
+    width: 300px;
+    height: 150px;
+    
 }
